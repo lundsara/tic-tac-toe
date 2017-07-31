@@ -4,6 +4,8 @@
  	 * @hint - does not take any parameters, but sets the initial value of the cell to 0
  	*/
 
+
+
 	/**** Minimum methods for the Cell class, REMEMEBER to declare outside the constructor, but still within the class ****/
 
 
@@ -14,6 +16,9 @@
 	 * @return {nothing}
 	*/
 
+
+  }
+
   /**
    * @name {playable} - Checks if the cell is playable.
 	 * @hint - the  cell is playable if it's value is 0 (default), the cell is not playable, if it has a value of 1.
@@ -21,7 +26,9 @@
   */
 
 
+
   /**
    * @name {render} - Renders the cell value.
 	 * @return {number} - returns the value of the current cell
   */
+
