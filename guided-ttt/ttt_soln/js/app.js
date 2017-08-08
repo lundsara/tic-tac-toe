@@ -1,14 +1,17 @@
-//worked with Aileen
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
+
 var player = true;
 
 //declare player 1 starting place to count for clicks
 var player=document.querySelectorAll('.cell');
 
-
+//select all boxes and pushes them into an array - code from https://davidwalsh.name/nodelist-array
 const collectorArr = new Array(9);
-//select all boxes and pushes them into an array - code Aileen, sourced from: https://davidwalsh.name/nodelist-array
+//add the function to what happens when someone clicks on a box using a for loop
+  //select all cells
 const nodeArray = [].slice.call(document.querySelectorAll('.cell'));
-//iterate through the cells and add event listener
+//iterate through the cells
 for (let i=0; i<nodeArray.length; i++){
   nodeArray[i].addEventListener('click', controlOutput)
 }
@@ -38,7 +41,6 @@ function controlOutput(event){
       alert("You won!"); }, 500);
     }
   }
-}
 
  function checkForWinner () {
   //check fo == falser win
@@ -66,3 +68,4 @@ function controlOutput(event){
     return false;
   }
 }
+});

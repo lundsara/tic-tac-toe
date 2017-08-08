@@ -1,28 +1,73 @@
-### Week 1 Down!
-![javasript everywhere](https://img.devrant.io/devrant/rant/r_448785_RYEUg.jpg)
+##Technical Discussion
+
+* used Javascript, HTML, and CSS
+## User Stories
+:x: :o: :x: :o:
+
+## Necessary UX Elements
+
+* instructions :page_with_curl:
+* start button
+* declare turns
+* declare winner
+* ask user if they would like to play again
+* clear board
+* score board
+* score total wins
+
+## Tic-Tac-Wants
+
+* customize x and o to a player avatar
+* play against AI :robot:
+* customize board design
+* set a timer on player turns :hourglass_flowing_sand:
+* sound effects :loudspeaker:
+* strike-through on winning combination
+* animations at point of win / tie game
+
+## Wire-Frames
+
+###### Start Game
+<img style='width: 600px' src="FullSizeRender.jpg"></img>
+
+###### Instructions
+<img style='width: 600px' src="FullSizeRender_1.jpg"></img>
+
+###### Pick a Player
+<img style='width: 600px' src="FullSizeRender_2.jpg"></img>
+
+###### Game Start State
+<img style='width: 600px' src="FullSizeRender_3.jpg"></img>
+
+###### Game Play State
+<img style='width: 600px' src="FullSizeRender_4.jpg"></img>
+
+###### Declare Winner
+<img style='width: 600px' src="FullSizeRender_5.jpg"></img>
+
+###### Restart Game
+<img style='width: 600px' src="FullSizeRender_6.jpg"></img>
 
 
-----------
-#### 🚀 This weekend you will be building your first game!
+## Difficult Code Snippet
 
-  * It's Tic Tac Toe!
-#### YaY!
+`const nodeArray = [].slice.call(document.querySelectorAll('.cell'));
 
-##### 🌟You have some options:
+for (let i=0; i<nodeArray.length; i++){
+  nodeArray[i].addEventListener('click', controlOutput)
+}
+function controlOutput(event){
+  if (collectorArr[event.target.id] != null) {
+    alert('Not a valid move!');
+  }
+  else {
+    if (player) {
+      nodeArray[event.target.id].innerHTML = 'X';
+      collectorArr[event.target.id] = 'X';
+    }
+    else {
+     nodeArray[event.target.id].innerHTML = 'O';
+     collectorArr[event.target.id] = 'O';
+    }`
 
-In this file structure you will find 2 folders:
-* `freestyle-ttt` - to write your own Tic Tac Toe from scratch
-* `guided-ttt` - here we provided css and some instructions to follow.
 
-#### 🚀 Your homework submission should include:
-
-- A pull request created on _this repo_.
-- A link to your Tic Tac Toe on **BitBalloon**.
-- Completion, comfort, wins, losses, questions... you know the drill.
-
-## This homework is due 🚨 11PM on SUNDAY NIGHT! 🚨
-
-#### ❗️ Remember ...
-![Motivation](https://info.examtime.com/files/2014/05/motivation-to-study1.jpg)
-
-#### ❗️ P.S. Look over the Calculator project we built in class ... maybe you find useful things there to get started  ...

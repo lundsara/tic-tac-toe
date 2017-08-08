@@ -17,7 +17,7 @@
 	*/
 
 
-  }
+
 
   /**
    * @name {playable} - Checks if the cell is playable.
