@@ -50,7 +50,7 @@
 <img style='width: 600px' src="/wireframe/FullSizeRender_5.jpg"></img>
 
 ###### Restart Game
-<img style='width: 600px' src="/wireframe/FullSizeRender_6.jpg"></img>
+<img style='width: 600px' src="FullSizeRender_6.jpg"></img>
 
 
 ## Difficult Code Snippet
