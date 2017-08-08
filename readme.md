@@ -28,30 +28,30 @@
 ## Wire-Frames
 
 ###### Start Game
-<img style='width: 600px' src="FullSizeRender.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender.jpg"></img>
 
 ###### Instructions
-<img style='width: 600px' src="FullSizeRender_1.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_1.jpg"></img>
 
 ###### Pick a Player
-<img style='width: 600px' src="FullSizeRender_2.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_2.jpg"></img>
 
 ###### Game Start State
-<img style='width: 600px' src="FullSizeRender_3.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_3.jpg"></img>
 
 ###### Game Play State
-<img style='width: 600px' src="FullSizeRender_4.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_4.jpg"></img>
 
 ###### Declare Winner
-<img style='width: 600px' src="FullSizeRender_5.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_5.jpg"></img>
 
 ###### Restart Game
-<img style='width: 600px' src="FullSizeRender_6.jpg"></img>
+<img style='width: 600px' src="/wireframe/FullSizeRender_6.jpg"></img>
 
 
 ## Difficult Code Snippet
 
-`const nodeArray = [].slice.call(document.querySelectorAll('.cell'));
+```const nodeArray = [].slice.call(document.querySelectorAll('.cell'));
 
 for (let i=0; i<nodeArray.length; i++){
   nodeArray[i].addEventListener('click', controlOutput)
@@ -68,6 +68,6 @@ function controlOutput(event){
     else {
      nodeArray[event.target.id].innerHTML = 'O';
      collectorArr[event.target.id] = 'O';
-    }`
+    }```
 
 
