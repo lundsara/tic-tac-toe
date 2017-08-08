@@ -1,4 +1,8 @@
-##Technical Discussion
+## Tic-Tac-Toe
+
+<img style='width: 600px' src="/wireframe/screenshot.jpg"></img>
+
+## Technical Discussion
 
 * used Javascript, HTML, and CSS
 ## User Stories
